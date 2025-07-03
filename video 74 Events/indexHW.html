@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid purple;
+            margin: 15px;
+            padding: 40px 20px;
+        }
+        .btn{
+            display: inline;
+            padding: 10px 20px;
+            margin: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn">Button 1</button>
+        <button class="btn">Button 2</button>
+        <button class="btn">Button 3</button>
+        <button class="btn">Button 4</button>
+        <button class="btn">Button 5</button>
+    </div>
+
+    <script>
+        let button = document.querySelectorAll(".btn")
+        console.log(button);
+        button[0].addEventListener("click",()=>{
+            alert("Button 1 clicked")
+        })
+        button[1].addEventListener("click",()=>{
+            alert("Button 2 clicked")
+        })
+        button[2].addEventListener("click",()=>{
+            alert("Button 3 clicked")
+        })
+        button[3].addEventListener("click",()=>{
+            alert("Button 4 clicked")
+        })
+        button[4].addEventListener("click",()=>{
+            alert("Button 5 clicked")
+        })
+    </script>
+</body>
+</html>

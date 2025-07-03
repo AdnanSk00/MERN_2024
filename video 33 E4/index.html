@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 4</title>
+
+    <!-- Create a multicolor website which can change color using CSS Variables. -->
+    <style>
+        :root {
+            --a1: crimson;
+            --b2: orange;
+            --c3: purple;
+            --d4: greenyellow;
+            --e5: skyblue;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: cornflowerblue;
+        }
+
+        .nav {
+            background-color: black;
+            /* color: aliceblue; */
+            border: 2px solid greenyellow;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 35px;
+
+        }
+
+        a:hover {
+            background-color: var(--a1);
+        }
+        #a3_:hover{
+            background-color: var(--e5);   
+        }
+
+        a {
+            color: white;
+            /* text-decoration: none; */
+        }
+
+        /* li:hover { */
+        #a1:hover {
+            background-color: var(--b2);
+        }
+
+        #a2:hover {
+            background-color: var(--e5);
+        }
+
+        #a3:hover {
+            background-color: var(--a1);
+        }
+
+        #a4:hover {
+            background-color: var(--c3);
+        }
+
+        .container h1{
+            text-align: center;
+            padding-top: 56px;
+            /* font-size: 48px; */
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <!-- mera name adnan hai -->
+        <ul>
+            <li id="a1"><a href="#">Home</a></li>
+            <li id="a2"><a href="#">About</a></li>
+            <li id="a3"><a href="#" id="a3_">Contact</a></li>
+            <li id="a4"><a href="#">Search</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>AdnanSk</h1>
+    </div>
+</body>
+
+</html>
+
+<!-- Note : The right solution of exercise - 4 is in video 36. -->

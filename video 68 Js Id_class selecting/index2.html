@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21st January 2025</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box{
+            width : 100px;
+            height: 100px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box" id="unique">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </section>
+
+    <script>
+        let boxesById = document.getElementById("unique");
+        console.log(boxesById);
+        let boxesByClass = document.getElementsByClassName("box");
+        console.log(boxesByClass);
+        let boxesByTag = document.getElementsByTagName("div");
+        console.log(boxesByTag);
+        let boxesByQueryAll = document.querySelectorAll(".box");
+        console.log(boxesByQueryAll);
+
+        cont = document.body.firstElementChild;
+        console.log(cont.children);
+    </script>
+</body>
+</html>

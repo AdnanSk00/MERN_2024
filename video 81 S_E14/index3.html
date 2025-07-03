@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise # 14 || Async/Await</title>
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: green;
+            color: white;
+            font-size: 30px;
+        }
+
+        .cont {
+            display: flex;
+            align-items: baseline;
+        }
+
+        #dot {
+            animation: dotAnime infinite ease-in 1s;
+        }
+
+        @keyframes dotAnime {
+            30% {
+                opacity: 0.2;
+            }
+
+            70% {
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div id="box"></div>
+        <div id="dot">...</div>
+    </div>
+
+    <script>
+        let arr = [
+            "Initializing Hacking",
+            "Reading your files",
+            "Password files accessed",
+            "Sending your all personal and password files to server",
+            "Cleaning up",
+        ];
+        async function getData() {
+            let elem = document.getElementById("box");
+            for (const key of arr) {
+                await new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        elem.innerHTML = key;
+                        resolve();
+                    }, 3000);
+                });
+            }
+        }
+        getData();
+    </script>
+</body>
+
+</html>

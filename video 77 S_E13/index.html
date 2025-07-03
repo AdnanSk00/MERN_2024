@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution of Exercise - 13 of video 73</title>
+    <style>
+        /* *{margin: 0;padding: 0;} */
+        .card {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            border: 1px solid gray;
+            border-radius: 2px;
+            width: 1000px;
+            background-color: black;
+            padding: 12px 8px;
+            margin: 5px;
+        }
+        .image{
+            position: relative;
+        }
+        .image img {
+            width: 230px;
+            border-radius: 8px;
+        }
+        .image .capsule{
+            position: absolute;
+            bottom: 10px;   
+            right: 6px;
+            z-index: 10;
+            background-color: black;
+            color: white;
+            opacity: 0.7;
+            padding: 3px 4px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .text {
+            color: white;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .text, h1, p {
+            padding: 0px 6px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <!-- <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw" alt=""> -->
+                <img src="img.jpg" alt="">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+                <h1>Introduction to Backend | Sigma Web Dev video #2</h1>
+                <p>responsiveCode . 727K views . 2 months ago</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

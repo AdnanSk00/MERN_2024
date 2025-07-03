@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters on images</title>
+    <style>
+        body{
+            background-color: black;
+        }
+       
+        .img1{
+            filter: brightness(155%) contrast(175%);
+        }
+
+        .img2{
+            /* filter: invert(0.3);    */
+            /* filter: invert(1);    */
+
+            /* filter: opacity(0); */
+            /* filter: opacity(0.1); */
+            filter: opacity(1);
+            /* float: right; */
+            
+            
+        }
+        
+        .img3{
+            /* filter: grayscale(20%); */
+            filter: sepia(100%);
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="comp_setup.jpg" width="480vw" height="370vw" alt="">
+        <img class="img2" src="srk_image.jpg" width="600vw" height="380vw" alt="">
+        <img class="img3" src="vk2.jpg" width="400vw" height="400vw" alt="">
+    </div>
+</body>
+</html>

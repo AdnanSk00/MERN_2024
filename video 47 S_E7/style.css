@@ -1,0 +1,155 @@
+body {
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  width: 164px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 15px;
+}
+
+.right ul {
+  display: flex;
+  gap: 34px;
+}
+
+.right ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right ul li span {
+  padding: 0 5px;
+}
+
+.first {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 70px;
+  font-family: sans-serif;
+}
+
+.first span {
+  font-size: 40px;
+}
+
+section span img {
+  width: 105px;
+  margin: 0 20px;
+}
+
+.first p {
+  font-size: 21px;
+  width: 60vw;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background: #00b6d1;
+  padding: 14px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 800;
+  margin: 12px 0px;
+  cursor: pointer;
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+  margin-bottom: 8px;
+}
+
+.download :nth-child(2) {
+  font-size: 23px;
+}
+
+.download img {
+  width: 50px;
+  padding: 0 10px;
+}
+
+.small {
+  font-size: 15px;
+}
+
+.second {
+  /* background-color: aquamarine; */
+  max-width: 75vw;
+  margin: auto;
+}
+
+.blue {
+  background: #00b6d1;
+  padding: 14px 12px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.green {
+  background: #5cb85c;
+  padding: 14px 12px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.item {
+  padding: 10px;
+  background: #dce5ec;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.item-lang {
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px 15px;
+}
+
+@media screen and (max-width: 1145px){
+  .grid {
+    grid-template-columns: 1fr ;
+    background-color: red;
+  }
+}

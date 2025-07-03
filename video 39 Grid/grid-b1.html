@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid-2 Adnan</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav nav"
+                "side empty article article"
+                "footer footer footer footer";
+            text-align: center;
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            /* width: 55px; */
+            align-content: center;
+        }
+
+        .item-1 {
+            grid-area: nav;
+            border: 1px solid lime;
+            background-color:burlywood;
+        }
+
+        .item-2 {
+            grid-area: side;
+            background-color: aquamarine;
+        }
+
+        .item-3 {
+            grid-area: article;
+            background-color:mediumpurple;
+        }
+
+        .item-4 {
+            grid-area: footer ;
+            border: 2px solid blue;
+            background-color: rgb(197, 144, 155);
+        }
+
+        .item-5 {
+            grid-area: nav;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">Navigation</div>
+        <div class="item item-2">Side</div>
+        <div class="item item-3">Article</div>
+        <div class="item item-4">Footer</div>
+        <div class="item item-5">Nav</div>
+        <div class="item item-6">Empty</div>
+    </div>
+</body>
+
+</html>

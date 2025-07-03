@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;500;600;700;800;900&display=swap"); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("/video 53 Netflix Clone/assets/images/back_img.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+}
+
+.main .box {
+  height: 644px;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  background-color: black; 
+}
+
+nav {
+  max-width: 70vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  color: red;
+  width: 114px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 24px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-weight: 800;
+  font-size: 45px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 20px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid rgb(252, 186, 186);
+  cursor: pointer;
+  margin: 8px;
+  font-size: 14px;
+}
+.btn-red-sm {
+  background-color: #de1515;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.main input {
+  padding: 20px 175px 16px 14px;
+  font-weight: 200;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(255, 253, 253, 0.5);
+  color: white;
+}
+.btn-red {
+  background-color: #de1515;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 500;
+  padding: 18px 20px 12px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+
+.separation {
+  height: 8px;
+  background-color: #2e2e2e;
+}
+
+
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  margin: 60px auto;
+  color: white;
+}
+
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 40vw;
+  position: relative;
+  z-index: 10;
+  margin: 25px 15px 25px 5px;
+}
+.secImg video {
+  position: absolute;
+  top: 108px;
+  right: 90px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 5px 0 30px ;
+}
+.first > div :nth-child(1) {
+  font-size: 45px;
+  font-weight: 900;
+}
+.first > div :nth-child(2) {
+  font-size: 24px;
+}
+
+.second > div :nth-child(1) {
+  font-size: 50px;
+  font-weight: 900;
+}
+.second > div :nth-child(2) {
+  font-size: 27px;
+}
+
+.third > div :nth-child(1) {
+  font-size: 42px;
+  font-weight: 900;
+}
+.third > div :nth-child(2) {
+  font-size: 26px;
+}
+
+.fourth > div :nth-child(1) {
+  font-size: 42px;
+  font-weight: 900;
+}
+.fourth > div :nth-child(2) {
+  font-size: 21px;
+}
+
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  padding: 25px 0 10px 0;
+}
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
+}
+.faq :hover {
+  background-color: #414141;
+  color: white;
+}
+.faq-box img {
+  filter: invert(1);
+}
+.faq-box {
+  color: white;
+  transition: all 1s ease-out;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 70vw;
+  margin: 10px auto;
+  font-size: 24px;
+}

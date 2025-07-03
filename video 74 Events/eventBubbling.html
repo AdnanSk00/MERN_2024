@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: aquamarine;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+        }
+
+        .childContainer {
+            background-color: darksalmon;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .container {
+            background-color: rgb(15, 87, 63);
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            // Note :- stopPropagation() is used to stop event bubbling with its parent
+            e.stopPropagation()             
+            alert("Child was clicked")
+        })
+
+        // document.querySelector(".childContainer").addEventListener("click", (e) => {
+        //     // e.stopPropagation()
+        //     alert("ChildContainer was clicked")
+        // })
+        document.querySelector(".childContainer").removeEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("ChildContainer was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("Container was clicked")
+        })
+
+
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        // Note :- setInterval() changes the color continuous after the given second
+        let a = setInterval(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 1000);
+        console.log(a);
+        // clearInterval(a);
+
+        // Note :- setTimeout() - After page reloading it changes the color only one time after the given second is completed
+        let b = setTimeout(() => {
+            document.querySelector(".container").style.background = getRandomColor();
+        }, 3000);
+        console.log(b);
+        // clearTimeout(b);
+
+
+    </script>
+</body>
+
+</html>

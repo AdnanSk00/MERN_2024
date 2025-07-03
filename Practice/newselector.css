@@ -1,0 +1,10 @@
+ul li a {
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+body ul li {
+  list-style: none;
+}
+a {
+  font-size: 40px;
+}

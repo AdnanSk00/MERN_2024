@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Exercise 14 - Hacker's Terminal</title>
+  <style>
+    body {
+      background-color: #00FF00;
+      /* Green background */
+      font-family: 'Courier New', monospace;
+      color: #00FF00;
+      text-align: center;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .terminal {
+      display: inline-block;
+      margin-top: 50px;
+      padding: 20px;
+      border: 2px solid #00FF00;
+      border-radius: 10px;
+      background-color: black;
+      white-space: pre;
+    }
+
+    .blink {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="terminal" id="terminal">
+    Initializing Hacking<span class="blink">...</span><br>
+  </div>
+
+  <script>
+    // Function to introduce a delay using Promises
+    async function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // Function to simulate the hacking process
+    async function simulateHacking() {
+      const messages = [
+        "Reading your files<span class='blink'>...</span>",
+        "Password Files detected<span class='blink'>...</span>",
+        "Sending all passwords and personal files to server<span class='blink'>...</span>",
+        "Cleaning up<span class='blink'>...</span>"
+      ];
+
+      const terminal = document.getElementById('terminal');
+
+      // Loop through each hacking message
+      for (let i = 0; i < messages.length; i++) {
+        // Display the current message in the terminal
+        terminal.innerHTML += messages[i] + '<br>';
+
+        // Introduce a random delay between 1 and 7 seconds
+        await sleep(Math.floor(Math.random() * 7000) + 1000);
+      }
+    }
+
+    // Start the hacking simulation when the page loads
+    simulateHacking();
+  </script>
+</body>
+
+</html>

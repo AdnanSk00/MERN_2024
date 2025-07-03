@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise - 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            background-color:rgb(255, 49, 83);
+            padding: 30px 0;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+        }
+        li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .content{
+            padding: 10px 15px;
+            background-color: black;
+            height: 780px;
+        }
+        .boxes{
+            height: 500px;
+            background-color:green;
+            padding: 0px 50px;
+            /* display: flex; */
+        }
+        .box1{
+            height: 400px;
+            width: 510px;
+            background-color:rgb(250, 118, 74);
+            display: inline-block;
+            margin: 50px 40px;
+        }
+        .box2{
+            height: 400px;
+            width: 510px;
+            background-color:rgb(43, 171, 246);
+            display: inline-block;
+            margin: 50px 40px;
+        }
+        .welcome{
+            border: 2px solid rgb(249, 143, 143);
+            border-radius: 71px;
+            margin: 50px 25vw;
+            color: white;
+            text-align: center;
+            /* padding: 48px 120px; */
+            padding: 34px;
+            font-size: 2em;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        footer{
+            color: purple;
+        }
+        p{
+            text-align: center;
+            font-size: 25px;
+            padding: 23px;
+        }
+        .orangebox{
+            height: 30px;
+            width: 32px;
+            background: orange;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            border-radius: 60px;
+            padding: 6px 0 0 0;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="boxes">
+            <div class="box1"></div>
+            <div class="box2"></div>    
+        </div>
+        <div class="welcome">
+            Welcome to this Sigma Web Development Express
+        </div>
+        <div class="orangebox">
+            @
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; made by AdnanSk 24 Apr 24</p>
+    </footer>
+</body>
+</html>
+
+<!-- Note : The right solution of exercise - 5 is in video 40. -->

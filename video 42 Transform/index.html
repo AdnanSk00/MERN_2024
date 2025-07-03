@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 70px;
+            width: 70px;
+            background-color: pink;
+            border-top: 4px solid blue;
+            border-right: 4px solid blue;
+            border-left: 4px solid red;
+            border-bottom: 4px solid red;
+
+            transform: rotate(0.125turn);
+            /* transform: rotate(330deg); */
+            transform-origin: 0%-0%;
+            
+            /* transform: rotate(40deg); */
+            /* transform: rotateX(70deg); */
+            /* transform: rotateY(40deg); */
+            /* transform: rotateZ(40deg); */
+
+            /* transform: scale(1.6); */
+            /* transform: scaleX(1.6); */
+            /* transform: scaleY(1.6); */
+            /* Note :- scaleZ() can not be applied */
+            /* transform: scale3d(1.6); */
+            
+            /* transform: skew(60deg); */
+            /* transform: skewX(40deg); */
+            /* transform: skewY(70deg); */
+            /* Note :- skewZ() can not be applied */
+
+            /* transform: translate(50px); */
+            /* transform: translateX(34px); */
+            /* transform: translateY(39px); */
+            /* transform: translateY(100%) skewX(40deg) translateX(-45%); */
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            margin: 50px;
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

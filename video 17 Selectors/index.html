@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* Element Selector */
+        div {
+            /* background-color:crimson;
+            color: white; */
+        }
+
+        /* Class Selector */
+        .red {
+            background-color: crimson;
+            color: white;
+        }
+
+        /* Id Selector */
+        #green {
+            background-color: green;
+            color: white;
+        }
+
+        /* Child Selector */
+        div>p {
+            background-color: coral;
+            color: maroon;
+        }
+
+        /* Descendant Selector */
+        div p {
+            background-color: coral;
+            color: maroon;
+        }
+
+        /* Universal Selector */
+        * {
+            /* margin: 0;
+            padding: 0; */
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: darkviolet;
+        }
+
+        p:first-child {
+            background-color: mediumspringgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="one">
+        <p>I am one</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+        <p>first child</p>
+        <p>div p / div>p</p>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>&nbsp;&nbsp;
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, rem!</p>
+</body>
+
+</html>

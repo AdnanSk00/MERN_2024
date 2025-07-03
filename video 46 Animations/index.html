@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: rgb(155, 174, 192);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 100px;
+            height: 90px;
+            /* border: 2px solid black; */
+            /* background-color: gold; */
+            
+            /*animation: sigmaKaAnimation;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0, 0.09, 0.06, 1.05);
+            animation-delay: 2s;
+            
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards
+            animation-play-state: paused; */
+            
+            /* Note: Animation Shorthand Property - */
+            /* animation: sigmaKaAnimation 3s ease-in-out 2s infinite alternate-reverse backwards; */
+            
+            /* animation: sigmaKaAnimation 3s ease-in-out 3s forwards; */
+            animation: sigmaKaAnimation 2s ease-in-out 2s 1,
+                       Adnan2 3s ease-in-out 2s 1 forwards;
+        }
+        
+
+        @keyframes sigmaKaAnimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+                /* transform: translateX(1000px); */
+            }
+        }
+
+        @keyframes Adnan2{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>

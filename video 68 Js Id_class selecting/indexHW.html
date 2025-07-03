@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        li{
+            list-style: none;
+            display: inline;
+            margin: 2px 10px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        table{
+            background-color: burlywood;
+            /* outline: auto; */
+        }
+        td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <caption>Employee Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Laguage</th>
+            </tr>
+        </thead>
+        <!-- <tbody> -->
+            <tr>
+                <td>Salahuddin</td>
+                <td>Wazir</td>
+                <td>Turki</td>
+            </tr>
+            <tr>
+                <td>Karatigin</td>
+                <td>Khazanchi</td>
+                <td>Urdu</td>
+            </tr>
+            <tr>
+                <td>Urfali</td>
+                <td>Jangju</td>
+                <td>Turki</td>
+            </tr>
+        <!-- </tbody> -->
+        <tfoot>
+            <tr>
+                <td>Lala</td>
+                <td>10</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="container">
+        <p>Element 1</p>
+        <div>ELement 2</div>
+        <section>Element 3</section>
+    </div>
+
+    <script>
+        // document.querySelector("li").style.backgroundColor = "red"
+        // document.querySelector("a").style.backgroundColor = "red"
+        // document.querySelector("ul").firstElementChild.style.backgroundColor = "red"
+        // document.querySelector("ul").children[0].style.backgroundColor = "red"
+        // document.querySelector("ul").childNodes[1].style.backgroundColor = "red"
+        console.log(document.querySelector("nav").firstElementChild.children[0].style.backgroundColor = "red")
+        console.log(document.querySelector(".container").firstElementChild.style.color = "green")
+        console.log(document.querySelector(".container").lastElementChild.style.color = "green")
+        document.querySelectorAll("li").forEach(e =>{
+            console.log(e.style.backgroundColor = "cyan")
+        })
+
+        let cont = document.querySelector(".container")
+        console.log(cont.matches("div"));
+        console.log(cont.firstElementChild.closest("p"));
+        console.log(cont.lastElementChild.contains(cont));
+        console.log(cont.contains(cont.children[1]));
+
+    </script>
+</body>
+</html>
