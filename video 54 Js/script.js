@@ -32,3 +32,4 @@ document.body.children[1].addEventListener("click", ()=>{
     document.body.style.color = "blue"
     document.querySelector(".box").style.color = "darkgreen"
 })
+console.log("Body Children", document.body.children);
