@@ -4,7 +4,7 @@
 let object = {
     "name" : "Adnan Shaikh",
     "phone" : 9420988518,
-    "marks" : 8.29 
+    "marks" : 8.38 
 }
 console.log(object)
 
@@ -14,7 +14,7 @@ console.log(num, typeof num, "\n");
 let obj = {}
 obj.name = "Mr. Shaikh";
 obj.phone = 9420988518;
-obj.marks = 74.00;
+obj.marks = 76.3;
 console.log(obj, typeof obj);
 
 const o = {

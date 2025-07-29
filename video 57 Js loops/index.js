@@ -35,13 +35,16 @@ for (const key in obj) {
         console.log(key,":", obj[key]);
 }
 
-for (const alpha of "Adnan"){       // iterable data structure string
+for (const alpha of "Adnan"){       // iterable data structure - String
     console.log(alpha);
 }
 
 const arr = [2, 4, 6, 8];       // array is iterable
-for (const value in arr) {      // for in loop
+for (const value in arr) {      // for in loop - index
     console.log(value);
+}
+for (const value of arr) {      // for in loop - index
+    console.log(value);         // for of loop - value
 }
 
 // let i = 0;

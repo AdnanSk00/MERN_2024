@@ -16,7 +16,7 @@ do{
 
 const input = prompt("Enter the number : ")
 if(input > 4){
-    // location.href = "https://google.com"
+    location.href = "https://google.com"
 }
 
 const colorChange = prompt("Select background color yellow, red, purple - ")

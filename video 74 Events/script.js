@@ -7,8 +7,8 @@ let button = document.getElementById("btn");
 //     alert("I was clicked. Yayy!!")
 //     document.body.style.backgroundColor = "rgb(23, 6, 78)";
 //     // document.getElementsByClassName("container").style.color = "hsl(235, 96%, 79%)";
-    // document.querySelector(".container").style.color = "greenyellow";
-    // })
+//     document.querySelector(".container").style.color = "greenyellow";
+// })
     
 // button.addEventListener("dblclick", ()=>{
 //     // alert("I was clicked. Yayy!!")
@@ -21,8 +21,8 @@ let button = document.getElementById("btn");
 //     alert("Dont hack us by right click please!")
 // })
 
-document.addEventListener("keydown", (e)=>{
-    console.log(e)
-    // console.log(e, e.key, e.keyCode)
-})
+// document.addEventListener("keydown", (e)=>{
+//     console.log(e)
+//     console.log(e, e.key, e.keyCode)
+// })
 

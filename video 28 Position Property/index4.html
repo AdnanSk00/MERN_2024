@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    /* 1. STATIC */
+    .static-box {
+      position: static;
+      background-color: #555;
+    }
+
+    /* 2. RELATIVE */
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background-color: #008080;
+    }
+
+    /* 3. ABSOLUTE */
+    .relative-container {
+      position: relative;
+      height: 200px;
+      border: 2px dashed red;
+      margin: 20px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      background-color: #e67e22;
+      width: 150px;
+    }
+
+    /* 4. FIXED */
+    .fixed-box {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #c0392b;
+      width: 150px;
+      height: 30px;
+      text-align: center;
+      z-index: 100;
+    }
+
+    /* 5. STICKY */
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background-color: #2980b9;
+      z-index: 100;
+    }
+
+    .content {
+      height: 1500px;
+      padding-top: 50px;
+      background: linear-gradient(#f0f0f0, #cccccc);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FIXED (Always visible) -->
+  <div class="box fixed-box">Fixed Box</div>
+
+  <!-- STICKY (Scroll to stick) -->
+  <div class="box sticky-box">Sticky Box (Scroll me!)</div>
+
+  <!-- STATIC -->
+  <div class="box static-box">Static Box</div>
+
+  <!-- RELATIVE -->
+  <div class="box relative-box">Relative Box (moved 20px ↓ and →)</div>
+
+  <!-- ABSOLUTE inside RELATIVE container -->
+  <div class="relative-container">
+    <div class="box absolute-box">Absolute Box<br>(inside relative)</div>
+    <p style="padding: 10px;">This container has <code>position: relative</code>, so the orange box is positioned inside it.</p>
+  </div>
+
+  <!-- Dummy content to enable scrolling -->
+  <div class="content">
+    <p>Scroll down to see how <strong>sticky</strong> and <strong>fixed</strong> boxes behave!</p>
+  </div>
+
+</body>
+</html>

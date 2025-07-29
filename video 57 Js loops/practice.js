@@ -1,6 +1,6 @@
 // I am clearing my concept on objects & loops today on Sunday 12th January 2025
 
-let items = ['jam', 0, 'shoe', 'egg', 5, 'she', 56]
+let items = ['jam', 0, 'shoe', 'egg', 5, 'she', 56]     // iterable - .forEach()
 
 const dreams = "BAGHDAD"
 
@@ -9,14 +9,14 @@ console.log(items, typeof items);
 console.log(Object.keys(items));
 console.log(Object.values(items));
 
-for(const key in items){
+for(const key in items){        // index
     console.log(key, items[key]);
 }
 
 console.log('------------');
 
 
-for(const key of items){
+for(const key of items){        // value
     console.log(key, items[key]);
 }
 

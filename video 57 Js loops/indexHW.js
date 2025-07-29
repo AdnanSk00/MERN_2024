@@ -19,17 +19,17 @@ for(const val in obj){
 }
 
 
-// const userNumber = (number)=>{
-//     let userEnter = prompt("Enter the number : ");
-//     if(userEnter == number){
-//         alert("You entered right number");
-//     }
-//     else{
-//         alert("Try again")
-//         return userNumber(number)
-//     }
-// }
-// let correct = userNumber(56);
+const userNumber = (number)=>{
+    let userEnter = prompt("Enter the number : ");
+    if(userEnter == number){
+        alert("You entered right number");
+    }
+    else{
+        alert("Try again")
+        return userNumber(number)
+    }
+}
+let correct = userNumber(56);
 
 // let correctNumber = 10;
 // while(true){

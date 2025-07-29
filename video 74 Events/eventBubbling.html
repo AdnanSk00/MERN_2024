@@ -51,7 +51,7 @@
         })
 
         // document.querySelector(".childContainer").addEventListener("click", (e) => {
-        //     // e.stopPropagation()
+        //     e.stopPropagation()
         //     alert("ChildContainer was clicked")
         // })
         document.querySelector(".childContainer").removeEventListener("click", (e) => {
@@ -89,3 +89,37 @@
 </body>
 
 </html>
+
+<!-- <c:if test="${not empty msgKeyLogin}">
+		<div class="msg" id="LoginMsg">${msgKeyLogin}</div>
+		<div class="msg" id="UserInsertMsg">${msgKeyUserInsert}</div>
+		<div class="msg" id="RegisterMsg">${msgKeyRegister}</div>
+		<div class="msg" id="CustInsertMsg">${msgKeyCustInsert}</div>
+	
+		<script>
+			setTimeout(function() {
+				const msgDiv = document.getElementById("LoginMsg");
+				if (msgDiv) {
+					msgDiv.style.display = "none";
+				}
+			}, 2000);
+			setTimeout(function() {
+				const msgDiv = document.getElementById("UserInsertMsg");
+				if (msgDiv) {
+					msgDiv.style.display = "none";
+				}
+			}, 2000);
+			setTimeout(function() {
+				const msgDiv = document.getElementById("RegisterMsg");
+				if (msgDiv) {
+					msgDiv.style.display = "none";
+				}
+			}, 2000);
+			setTimeout(function() {
+				const msgDiv = document.getElementById("CustInsertMsg");
+				if (msgDiv) {
+					msgDiv.style.display = "none";
+				}
+			}, 2000);
+		</script>
+	</c:if> -->

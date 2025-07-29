@@ -26,6 +26,7 @@ document.querySelector(".box").style.color = "white";
 
 // let button = document.getElementsByClassName("btn");
 
+// button.addEventListener("click", ()=>{       // error
 document.body.children[1].addEventListener("click", ()=>{
     console.log("button click hua");
     document.body.style.backgroundColor = "gold";

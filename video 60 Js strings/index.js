@@ -1,7 +1,7 @@
 console.log("This is 60 strings tutorial on 27th May 2024");
 console.log("Strings are immutable - can not change real string")
 
-let a = "Adnan";
+let a = "Adnan";        // iterable - index
 console.log(a[0]);
 console.log(a[1]);
 console.log(a[2]);
@@ -37,7 +37,7 @@ console.log(k.slice(2),"\n");
 
 console.log(k.replace("Clein", "Code"));
 console.log(k.concat(a,"Sk"),"\n");
-// console.log(k,a);
+console.log(k,a);
 
 let f = "   Fan   ";
 rf = f.trim();          // Removing white space
@@ -45,4 +45,7 @@ console.log(f);
 console.log(rf);
 
 console.log(`What happened to you bro ? Today is Saturday 11th Jan 2025`);
-// console.log(`What happened to you bro ? Today \ris 11th Jan 2025 Saturday`);
+console.log(`What happened to you bro ? Today \ris 11th Jan 2025 Saturday`);
+console.log(`fourseven \rabcd`);
+
+// \r - count char after \r to ` and remove that count from starting ` and print remaining

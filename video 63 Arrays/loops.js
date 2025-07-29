@@ -59,7 +59,7 @@ let object = {
     2 : "c",
     length:3
 }
-console.log(Array.prototype.join.call(object, "+"));
+console.log(Array.prototype.join.call(object, "++"));
 
 let new_obj = {
     0 : "1",

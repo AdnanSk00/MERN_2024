@@ -41,6 +41,8 @@ let o = {
     "is_handsome" : true
 } 
 console.log(Object.keys(o));
+// console.log(Object.keys(o["name"]));
+
 console.log(Object.values(o),'\n');
 
 console.log(o, typeof o);

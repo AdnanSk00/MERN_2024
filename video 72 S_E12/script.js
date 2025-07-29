@@ -1,4 +1,4 @@
-// console.log("Script.js initializing");
+console.log("Script.js initializing");
 
 // // let boxes = document.getElementsByClassName("box")
 // // let boxes = document.querySelectorAll(".box");
@@ -48,4 +48,4 @@ for(var i = 0; i < boxes.length; i++){
     // Set content to show color code
     box.textContent = randomColor;
 }
-document.body.style.backgroundColor = "rgb(172, 131, 177)";
+document.body.style.backgroundColor = "";

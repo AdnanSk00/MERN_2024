@@ -1,6 +1,6 @@
 console.log("...............Arrays..............");
 
-let arr = [1, 2, 4, 5, 7];
+let arr = [1, 2, 4, 5, 7];          // Array - Immutable
 // Index   0, 1, 2, 3, 4
 
 arr[0] = 92;
@@ -18,17 +18,17 @@ console.log(arr);
 
 console.log("==========================================");
 
-let a = [66, 5, 4, 3, 2, 11];
+let a = [66, 5, 4, 3, 2, 11];       // Immutable - Can't be changed
 console.log(a);
-console.log(a.pop());       // shows element
+console.log(a.pop());               // shows element
 console.log(a);
 console.log("length = ",a.length);      
-console.log(a.push(100));       // Shows length
+console.log(a.push(100));           // Shows length
 console.log(a.push("element"));
 console.log(a);
-console.log(a.shift());         // shows element
+console.log(a.shift());             // shows element
 console.log(a);
-console.log(a.unshift("Aagaz"));     // Shows length
+console.log(a.unshift("Aagaz"));    // Shows length
 // a.unshift()
 console.log(a);
 console.log(delete a[6]);
@@ -53,13 +53,13 @@ console.log("==========================================");
 
 let a1 = [6, 3, 5, 24, 2, 10];
 console.log(a1);
-console.log(a1.sort());
+console.log(a1.sort());     // mutable - change real object(array - a1)
 console.log(a1);
 console.log(a1.splice(2, 3, 3741));
-// splice is used to replace from index[2] to 3 values with new value(3741)
+// splice is used to replace from index[2] to index[4] - 3 values with new value(3741)
 console.log(a1);
-console.log(a1.slice(4));
-console.log(a1.slice(1, 5));
+console.log(a1.slice(4));       // index[4]
+console.log(a1.slice(1, 5));    // index[1] to...index[4] before index[5]
 console.log(a1);
 console.log(a1.reverse());
 console.log(a1.reverse());

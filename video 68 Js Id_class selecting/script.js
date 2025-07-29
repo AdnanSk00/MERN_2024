@@ -5,13 +5,14 @@ console.log(boxes)
 
 boxes[2].style.backgroundColor = "red"
 // document.getElementsByClassName("box")[2].style.backgroundColor = "red";
+// document.body.children[0].children[2].style.backgroundColor = "red"
 
 let id_box = document.getElementById("redbox")
 console.log(id_box);
 document.getElementById("redbox").style.backgroundColor = "crimson";
 // id_box.style.backgroundColor = "crimson"
 
-// document.querySelector(".box").style.backgroundColor = "green"
+document.querySelector(".box").style.backgroundColor = "green"
 // Note :- above returns first element which matched with .box selector.
 
 console.log(document.querySelectorAll(".box"))                      

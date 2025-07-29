@@ -46,9 +46,9 @@ console.log(arey);
 
 console.log(Array.from("Plastine"));
 
-arrayMaking = Array.from(Array(6).keys())
-console.log(arrayMaking);
+arrayMaking1 = Array.from(Array(6).keys())
+console.log(arrayMaking1);
 
-// arrayMaking = Array.from(Array(6))
-// console.log(Object.keys(arrayMaking))
+arrayMaking2 = Array.from(Array(6))
+console.log(Object.keys(arrayMaking2))
 

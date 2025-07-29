@@ -1,10 +1,10 @@
-const promt = require('prompt-sync')();
+// const promt = require('prompt-sync')();
 
 const arrNum = []
 // console.log(arrNum);
 
 for(let i = 0; i<10; i++){
-    arrNum[i] = promt(`Enter the number on index[${i}] - `)
+    // arrNum[i] = promt(`Enter the number on index[${i}] - `)
     if(arrNum[i] == 0){
         break;
     }
