@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label>Enter name: </label>
+        <input type="text" id="name"><br><br>
+
+        <label>Enter password: </label>
+        <input type="password" id="pass"><br><br>
+
+        <label>Re-enter password: </label>
+        <input type="password" id="rePass"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var pass = document.getElementById("pass").value;
+            var rePass = document.getElementById("rePass").value;
+
+            if (name === "good" && pass === "123" && rePass === "123") {
+                alert("Submitted successfully...");
+                return true; // allow form to submit (if action is set)
+            } else {
+                alert("Validation failed. Please enter correct data.");
+                return false; // prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>
