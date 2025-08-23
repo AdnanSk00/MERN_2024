@@ -1,0 +1,17 @@
+nav, ul{
+    display: flex;
+
+}
+
+ul{
+    gap: 34px;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: beige;
+    padding: 23px;
+}

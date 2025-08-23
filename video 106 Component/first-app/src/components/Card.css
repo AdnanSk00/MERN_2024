@@ -1,0 +1,11 @@
+.card{
+    width: 20vw;
+    border: 2px solid black;
+    margin: 27px;
+    height: 35vh;
+}
+
+
+p{
+    margin: 10px;
+}
