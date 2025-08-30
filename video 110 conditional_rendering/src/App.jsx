@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
   const [showBtn, setShowBtn] = useState(false)
   const [todos, setTodos] = useState([
     {
@@ -21,15 +20,15 @@ function App() {
     }
   ])
 
-  // const Todo = ({todo}) => {
-  //   return (<>      {/* component */}
-  //   <div className="m-4 border border-2 border-purple-400">
-  //     <div className="todo">{todo.title}</div>
-  //     <div className="todo">{todo.desc}</div>
-  //   </div>
+  const Todo = ({todo}) => {
+    return (<>      {/* component */}
+    <div className="m-4 border-2 border-purple-400">
+      <div className="todo">{todo.title}</div>
+      <div className="todo">{todo.desc}</div>
+    </div>
 
-  //   </>)
-  // }
+    </>)
+  }
 
   return (
     <>
@@ -45,27 +44,22 @@ function App() {
 
       {showBtn ? <button>showBtn is true</button> : <button>showBtn is false</button>}
       {/* {showBtn && <button>showBtn is true</button>} */}
-
+      
       {todos.map(item=>{
-        // return <Todo key={item.title} todo={item}/>
-        return ( 
-            <div key={item.title} className="m-4 border-2 border-purple-400">
-              <div className="todo">{item.title}</div>
-              <div className="todo">{item.desc}</div>
-          </div>
-        )
+        return <Todo key={item.title} todo={item}/>
+        // return ( 
+        //     <div key={item.title} className="m-4 border-2 border-purple-400">
+        //       <div className="todo">{item.title}</div>
+        //       <div className="todo">{item.desc}</div>
+        //   </div>
+        // )
       })}
+
       <div className="card">
         <button onClick={() => setShowBtn(!showBtn)}>
           Toggle showBtn
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
