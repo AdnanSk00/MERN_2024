@@ -18,11 +18,11 @@ function App() {
     }
   }, [])
 
-  const saveToLocalStorage = (params) => {
+  const saveToLocalStorage = () => {
     localStorage.setItem("todos", JSON.stringify(todos))
   }
 
-  const toggleFinished = (params) => {
+  const toggleFinished = () => {
     setShowFinished(!showFinished)
   }
   
